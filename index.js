@@ -41,7 +41,7 @@ const createIndexMdFile = () => {
     npm version: ${npmVersion}
     Node.js version: ${nodeVersion}
       
-    Date Comparisoion
+    Date Comparison
     Todays date: ${todaysDate};
     Your entered date: ${format(dateSentAsArgument, 'yyyy-MM-dd')}
     The date is today. ${isToday(dateSentAsArgument)}
