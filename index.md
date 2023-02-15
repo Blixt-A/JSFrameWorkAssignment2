@@ -8,11 +8,11 @@ Assignment-2
     Node.js version: v18.14.0
       
     Date Comparisoion
-    Todays date: 2023-02-13;
-    Your entered date: 2023-08-15
+    Todays date: 2023-02-15;
+    Your entered date: 2023-02-12
     The date is today. false
-    The date is before today. false
-    The date is after today. true
+    The date is before today. true
+    The date is after today. false
 
-    Days since course started: 14 days
+    Days since course started: 15 days
   

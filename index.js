@@ -56,20 +56,43 @@ const createIndexMdFile = () => {
 
 const createHtmlFile = () => {
   const html = `
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <style>
-          h1 {
-            text-align: center;
-            color: #9C3848;
-          }
-        </style>
-      </head>
-      <body>
-        <h1>Assignment-2</h1>
-      </body>
-    </html>
+  <!DOCTYPE html>
+  <html>
+    <head> </head>
+    <body>
+      <h1>Assignment-2</h1>
+      <div>
+        <p><b>Todays date:</b> ${todaysDate}</p>
+        <p><b>You entered date:</b> ${format(dateSentAsArgument, 'yyyy-MM-dd')}</p>
+        <p><b>Date is today:</b> ${isToday(dateSentAsArgument)}</p>
+        <p><b>The date is before today.</b> ${isBefore(dateSentAsArgument, currentDate)}</p>
+        <p><b>The date is after today.</b> ${isAfter(dateSentAsArgument, currentDate)}</p>
+        <p><b>Days since course started:</b> ${formatDistanceToNow(startofCourse)}</p>
+      </div>
+      <style>
+        body {
+          background: #8DAA91;
+        }
+        h1 {
+          color: #453643;
+          font-family: 'Lato', sans-serif;
+          padding: 20px;
+          text-align: center;
+        }
+        div {
+          background: #788475;
+          border-radius: 20%;
+          margin: 0 20px 0 20px;
+          padding: 10px;
+        }
+        p {
+          color: #453643; 
+          font-family: 'Lato', sans-serif;
+          text-align: center;
+        }
+      </style>
+    </body>
+  </html>
   `;
 
   fs.writeFileSync('index.html', html);
