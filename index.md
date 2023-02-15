@@ -9,10 +9,10 @@ Assignment-2
       
     Date Comparisoion
     Todays date: 2023-02-15;
-    Your entered date: 2023-02-12
+    Your entered date: 2023-02-23
     The date is today. false
-    The date is before today. true
-    The date is after today. false
-
+    The date is before today. false
+    The date is after today. true
+    
     Days since course started: 15 days
   

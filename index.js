@@ -47,7 +47,7 @@ const createIndexMdFile = () => {
     The date is today. ${isToday(dateSentAsArgument)}
     The date is before today. ${isBefore(dateSentAsArgument, currentDate)}
     The date is after today. ${isAfter(dateSentAsArgument, currentDate)}
-
+    
     Days since course started: ${formatDistanceToNow(startofCourse)}
   `;
                                                                                                     
@@ -61,36 +61,39 @@ const createHtmlFile = () => {
     <head> </head>
     <body>
       <h1>Assignment-2</h1>
-      <div>
+      <section>
+        <h3>Versions</h3>
+        <p><b>Git version:</b> ${gitVersion}</p>
+        <p><b>npm version:</b> ${npmVersion}</p>
+        <p><b>Node.js version:</b> ${nodeVersion}</p>
+      </section>
+      <section>
+        <h3>Date Comparison</h3>
         <p><b>Todays date:</b> ${todaysDate}</p>
         <p><b>You entered date:</b> ${format(dateSentAsArgument, 'yyyy-MM-dd')}</p>
         <p><b>Date is today:</b> ${isToday(dateSentAsArgument)}</p>
         <p><b>The date is before today.</b> ${isBefore(dateSentAsArgument, currentDate)}</p>
         <p><b>The date is after today.</b> ${isAfter(dateSentAsArgument, currentDate)}</p>
         <p><b>Days since course started:</b> ${formatDistanceToNow(startofCourse)}</p>
-      </div>
+      </section>
+      
       <style>
         body {
           background: #8DAA91;
         }
-        h1 {
+        h1, h3, p {
           color: #453643;
           font-family: 'Lato', sans-serif;
-          padding: 20px;
           text-align: center;
         }
-        div {
+        section {
           background: #788475;
           border-radius: 20%;
-          margin: 0 20px 0 20px;
+          margin: 0 20px 10px 20px;
           padding: 10px;
         }
-        p {
-          color: #453643; 
-          font-family: 'Lato', sans-serif;
-          text-align: center;
-        }
       </style>
+
     </body>
   </html>
   `;
